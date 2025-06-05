@@ -1,0 +1,7 @@
+host ssh-tunnel
+    hostname :HOST
+    user :USER
+    identityFile ~/.ssh/autossh-ssh-priv-key
+    RemoteForward :PORT localhost:22
+    ServerAliveInterval 30
+    ServerAliveCountMax 3

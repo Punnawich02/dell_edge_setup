@@ -1,0 +1,13 @@
+[Unit]
+Description=auto ssh tunnel
+After=network.target
+
+[Service]
+User=admin
+Environment="AUTOSSH_GATETIME=0"
+ExecStart=/usr/bin/autossh -M 0 -N ssh-tunnel
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

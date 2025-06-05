@@ -1,0 +1,8 @@
+[Unit]
+After=network.service
+
+[Service]
+ExecStart=/usr/local/bin/transit_bus_startup.sh
+
+[Install]
+WantedBy=default.target
