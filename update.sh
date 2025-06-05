@@ -48,10 +48,16 @@ done
 log "INTERNET CONNECTION IS UP"
 
 # -------------------------------------------------
-log "update apt package"
+log "apt update"
 sudo apt-get update
+
+log "apt upgrade"
 sudo apt-get upgrade -y
+
+log "dist upgrade"
 sudo apt-get dist-upgrade -y
+
+log "autoremove"
 sudo apt-get autoremove -y
 
 # -------------------------------------------------
