@@ -109,6 +109,12 @@ module.exports = {
           "$2y$08$1D5ORI9uAPBjojALzaC.2uvBaPeU46rdPkT22oIOtM.JyVNENWINe",
         permissions: "*",
       },
+      {
+        username: "user",
+        password:
+          "$2y$08$0koWCSNSgvWOkdQ1jJinkup0tpuv7n6GrWx4gunEWs1me62lyae.S",
+        permissions: "*",
+      },
     ],
   },
 
