@@ -61,8 +61,8 @@ log "autoremove"
 sudo apt-get autoremove -y
 
 # -------------------------------------------------
-log "install screen"
-sudo apt install screen
+# log "install screen"
+# sudo apt install screen
 
 # -------------------------------------------------
 log "install update-manager-core"
@@ -80,8 +80,8 @@ while true; do
   if [ "${SHOULDREBOOT}" == "y" ]; then
     echo "reboot now"
     sleep 2
-    warning "After reboot, please run \"screen\" to use screen mode"
-    warning "and run \"sudo do-release-upgrade\" to upgrade to 20.04 LTS"
+    # warning "After reboot, please run \"screen\" to use screen mode"
+    warning "After reboot run \"sudo do-release-upgrade\" to upgrade to 20.04 LTS"
     sudo reboot
     break
   elif [ "${SHOULDREBOOT}" == "n" ]; then
